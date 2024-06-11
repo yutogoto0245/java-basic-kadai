@@ -22,29 +22,10 @@ public class JyankenExec_Chapter26 extends Jyanken_Chapter26 {
 	System.out.println(choice);
 	
 	//playGameに　自分の出し手、ランダム出し手を渡す
-	playGame(myHand, randomHand);
-	
-
-	}
+	Jyanken.playGame(myHand, randomHand);
 	
 	
-	//結果出力
-	public static void playGame(String me, String opponent) {
-		if (me.equals(opponent) ) {
-			System.out.print("あいこです");
-		} else if (me.equals("パー") && opponent.equals("グー")) {
-			System.out.println("自分の勝ちです");
-		} else if (me.equals("チョキ") && opponent.equals("パー")) {
-			System.out.println("自分の勝ちです");
-		} else if (me.equals("グー") && opponent.equals("チョキ")) {
-			System.out.println("自分の勝ちです");
-		} else {
-			System.out.println("自分の負けです");
-		}
 	
 	}
-	
-	
-	
-	
 }
+

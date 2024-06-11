@@ -3,7 +3,7 @@ package kadai_026;
 import java.util.Scanner;
 
 public class Jyanken_Chapter26 {
-	public static String getMyChoice() {
+	public  String getMyChoice() {
 		//初回固定のコメント
 		System.out.println("自分のじゃんけんの手を入力する");
 		System.out.println("グーはrockのrを入力しましょう");
@@ -37,6 +37,23 @@ public class Jyanken_Chapter26 {
 		System.out.println(strJyanken);
 		return  strJyanken;
 	}
+	
+	
+	
+	//結果を出力する
+		public static void playGame(String me, String opponent) {
+			if (me.equals(opponent) ) {
+				System.out.print("あいこです");
+			} else if (me.equals("パー") && opponent.equals("グー")) {
+				System.out.println("自分の勝ちです");
+			} else if (me.equals("チョキ") && opponent.equals("パー")) {
+				System.out.println("自分の勝ちです");
+			} else if (me.equals("グー") && opponent.equals("チョキ")) {
+				System.out.println("自分の勝ちです");
+			} else {
+				System.out.println("自分の負けです");
+			}
+		}
 	
 
 }
